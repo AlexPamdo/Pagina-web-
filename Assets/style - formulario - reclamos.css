@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(img/reclamo.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+    backdrop-filter: blur(20px);
+}
+
+.section-section-left{
+    background-color: #606060;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 888px;
+    margin: 5% auto;
+    
+    background-color: rgb(231, 231, 231);
+    box-shadow: 0px 0px 5px;
+    align-items: center;
+    border-radius: 14px;
+} 
+
+.container .inputbox{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+i{
+    color: #606060;
+}
+
+.textarea-box{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.inputbox input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    border: 2px solid #c4c4c4;
+    border-radius: 40px;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    padding: 20px 20px 20px 20px;
+}
+
+.inputbox i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    transition: 300ms all ease;
+}
+
+.inputbox-textarea-box{
+    display: grid;
+}
+
+textarea{
+    height: auto;
+    border-radius: 5px;
+    resize: none;
+    border: 2px #c4c4c4;
+    border: 2px solid #c4c4c4;
+    outline-color: #c4c4c4;
+    padding: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.section{
+    padding: 20px;
+}
+
+.section-left{
+    display: flex;
+    height: 550px;
+    background-color: rgb(165, 19, 19);
+    flex-direction: row-reverse;
+    width: 50%;
+    border-radius: 10px 0px 0px 10px;
+    margin-right: 60px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section-left h1{
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.section img{
+    max-width: 80%;
+    height: auto;
+    box-shadow: #000000;
+}
+
+h2{
+    padding-bottom: 20px;
+    font-size: 28px;
+    color: rgb(73, 17, 17);
+    font-weight: 600;
+}
+
+
+
+h2{
+    text-align: center;
+    flex-direction: column;
+}
+
+form{
+    display: flex; 
+    flex-direction: column;
+    width: 300px;
+    padding-left: 30px;
+}
+
+label{
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: rgb(87, 87, 87);
+}
+
+
+
+input[type="submit"]{
+    background-color: rgb(165, 19, 19);
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 4px;
+    color: rgb(233, 233, 233);
+    cursor: pointer;
+    transition: 0.2s;
+    font-weight: bold;
+}
+
+.input-file{
+    display: flex;
+    background-color: #c2c2c2;
+    justify-content: center;
+    border-radius: 20px;
+    margin-top: 20px;
+    transition: 300ms all ease;
+    cursor: pointer;
+}
+
+.input-file i{
+    cursor: pointer;
+    transition: 300ms all ease;
+}
+
+
+
+.input-file:hover i{
+    color: #fff;
+}
+
+.input-file:hover  .fileinput-contadorarchivos{
+    color: #fff;
+}
+
+.input-file:hover{
+    color: #fff;
+}
+
+.input-file:hover{
+    background-color: #6b6b6b;
+}
+
+
+.input-file.has-file {
+    background-color: #248000;
+}
+
+
+.input-file i{
+    font-size: 50px;
+}
+
+input[type="submit"]:hover{
+    background-color: rgb(75, 0, 15);
+}
+
+.input-file input{
+    display: none;
+}
+
+.input-file.file-selected {
+    background-color: #b80000;
+  }
+
+  .input-file.file-selected i {
+    color: white;
+  }
+
+  .input-file.file-selected .fileinput-contadorarchivos {
+    color: white;
+  }
+
+  .fileinput-contadorarchivos span{
+    padding-right: 5px;
+  }
+
+  .fileinput-contadorarchivos{
+    display: flex;
+    align-items: center;
+    transition: 200ms all ease;
+  }
+
+
+@media (max-width:991px){
+
+.container{
+    background: none;
+    justify-content: center;
+    box-shadow: none;
+    margin: 1% auto;
+    padding: 20px;
+}
+
+form{
+    padding-left: 0;
+}
+
+label{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+h2{
+    color: #fff;
+}
+
+.section{
+    padding: 0;
+    padding-bottom: 20px;
+}
+
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="Assets/style - formulario - reclamos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="fondo"></div>
+
+    <div class="container">
+
+        <div class="section section-left">
+            <h1>Formulario para Solicitar un reclamo</h1>
+            <img src="Assets/img/Contraloria.png" alt="">
+        </div>
+      
+        
+        <form accept="">
+
+            <div class="inputbox">    
+            <input type="text" id="fname" name="fname" placeholder="Nombre completo" required>
+            <i class='bx bxs-user'></i>
+            </div>
+
+            <div class="inputbox">
+            <input type="email" name="email" id="email" placeholder="Ingrese su e-mail" required >
+            <i class='bx bxs-envelope' title="Texto descriptivo"></i>
+            </div>
+
+            <div class="inputbox-textarea-box">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Ingrese la Informacion sobre su reclamo" required></textarea>
+            </div>
+
+            
+
+            <div class="input-file" title="Ingrese Los Archivos relacionados con su reclamo">
+                <input id="file" type="file" multiple required>
+                <label for="file">
+                  <i class='bx bxs-file-import'></i>
+                </label>
+
+                <div class="fileinput-contadorarchivos">
+                    <span class="file-count">0</span>
+                    <p>Archivos Subidos</p>
+              </div>
+
+              <script src="Assets/scripts/icon-upload.js"></script>
+            </div>
+
+            <input type="submit" >
+              
+        </form>
+    
+    </div>
+    
+
+</body>
+</html>
