@@ -184,10 +184,15 @@ body{
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    text-align: center;
 }
 
 .Auditorias-container{
     display: flex;
+}
+
+.btn-1{
+    margin-bottom: 50px;
 }
 
 .Auditorias-container i{
@@ -475,6 +480,10 @@ p{
 
     .Auditorias{
         padding: 30px;
+    }
+
+    .Auditorias-container {
+        flex-direction: column-reverse;
     }
 
     .Auditorias-container h2{

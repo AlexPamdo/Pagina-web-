@@ -526,11 +526,12 @@ p{
         display: none;
     } 
 
-
     .navbar li:hover .menu-vertical{
         display: none;
-    }
+    } 
 
+
+   
     .menu .navbar ul li {
         width: 100%;
     }
