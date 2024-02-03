@@ -457,15 +457,22 @@ p{
 
 .carrusel-container{
    text-align: center;
-   padding: 100px;
+   padding: 60px 0px 70px 0px;
    background-color: rgb(231, 231, 231);
 }
 
 .carrusel{
     display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+.carrusel div{
+    position: relative;
     animation: scroll 40s linear infinite;
-    -webkit-animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 45s linear infinite;
     width: calc(200px * 14);
+    transition: 1s;
 }
 
 @keyframes scroll{
