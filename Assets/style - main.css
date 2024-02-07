@@ -1,646 +1,674 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Roboto:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Roboto:wght@500&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
 }
 
-body{
-    font-family: 'Poppins', sans-serif;
-     font-family: 'Roboto', sans-serif;
+body {
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.header{
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(img/Hader-main.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 70vh;
-    display: flex;
-    align-items: center;
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(img/Hader-main.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
 }
 
 /* Menu Superior */
 
-.menu{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.header img{
-    width: 80px;
-    transition: 0.3s;
+.header img {
+  width: 80px;
+  transition: 0.3s;
 }
 
-.header img:hover{
-    transform: scale(1.2);
+.header img:hover {
+  transform: scale(1.2);
 }
 
-.header i{
-    color: white;
-    transition: 0.3s;
+.header i {
+  color: white;
+  transition: 0.3s;
 }
 
-.header i:hover{
-    transform: scale(1.2);
+.header i:hover {
+  transform: scale(1.2);
 }
 
 /* barra de navegacion */
 
 .menu .navbar ul li {
-    position: relative;
-    float: left;
+  position: relative;
+  float: left;
 }
-
 
 .menu .navbar ul li a {
-    font-size: 18px;
-    padding: 20px;
-    color: rgb(255, 255, 255);
-    display: block;
-    font-weight: 600;
-    transition: 0.2s;
-    border-radius: 4px;
+  font-size: 18px;
+  padding: 20px;
+  color: rgb(255, 255, 255);
+  display: block;
+  font-weight: 600;
+  transition: 0.2s;
+  border-radius: 4px;
 }
 
-.menu .navbar ul li a i{
-    margin: 5px;
+.menu .navbar ul li a i {
+  margin: 5px;
 }
 
+.nav-menu-option i {
+  display: none;
+}
 
-.menu .navbar ul li a:hover{
-    color: rgb(226, 71, 71);
-    background-color: rgba(0, 0, 0, 0.384);
-} 
+.menu .navbar ul li a:hover {
+  color: rgb(226, 71, 71);
+  background-color: rgba(0, 0, 0, 0.384);
+}
 
-
-.menu .navbar ul li a:hover i{
-    color: rgb(226, 71, 71);
-    background-color: rgba(0, 0, 0, 0.384);
-    transform: scale(1.2);
-} 
-
-
-
+.menu .navbar ul li a:hover i {
+  color: rgb(226, 71, 71);
+  background-color: rgba(0, 0, 0, 0.384);
+  transform: scale(1.2);
+}
 
 /* Menu Verticales */
 
-.menu-vertical{
-    position:absolute;
-    display: none;
-    width: 200px;
-    background-color: black;
-    border-radius: 11px;
+.menu-vertical {
+  position: absolute;
+  display: none;
+  width: 200px;
+  background-color: black;
+  border-radius: 11px;
+  transition: 0, 3s;
 }
 
-.navbar li:hover .menu-vertical{
-    display: block;
-    transition: 0,3s;
+.navbar li:hover .menu-vertical {
+  display: block;
 }
 
 /* Buscador*/
 
-.look-container{
-    display: flex;
-    
+.look-container {
+  display: flex;
 }
 
-.look-container input{
-    padding: 10px;
-    padding-right: 35px;
-    border-radius: 5px 0 0 5px;
-    border: 0ch;
-    outline: none;
-    background-color: #e2e2e2;
+.look-container input {
+  padding: 10px;
+  padding-right: 35px;
+  border-radius: 5px 0 0 5px;
+  border: 0ch;
+  outline: none;
+  background-color: #e2e2e2;
 }
 
-.look-container button{
-    background-color: #d12710;
-    width: 49px;
-    height: 40px;
-    border: 0;
-    border-radius: 0 5px 5px 0;
-    cursor: pointer;
-    transition: 0.3s;
+.look-container button {
+  background-color: #d12710;
+  width: 49px;
+  height: 40px;
+  border: 0;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .look-container button:hover {
-    background-color: #75170a;
+  background-color: #75170a;
 }
 
 /* Menu de navegacion */
 
 #menu {
-    display: none;
+  display: none;
 }
 
 .menu label {
-    cursor: pointer;
-    display: none;
+  cursor: pointer;
+  display: none;
 }
 
-.header-content{
-    text-align: center;
+.header-content {
+  text-align: center;
 }
 
 .header-content h1 {
-    font-size: 60px;
-    line-height: 80px;
-    color: white;
-    text-transform: uppercase;
-    margin-bottom: 35px;
+  font-size: 60px;
+  line-height: 80px;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 35px;
 }
 
 .header-content p {
-    font-size: 16px;
-    color: rgb(216, 216, 216);
-    padding: 0 250px;
-    margin-bottom: 25px;
+  font-size: 16px;
+  color: rgb(216, 216, 216);
+  padding: 0 250px;
+  margin-bottom: 25px;
 }
 
 /* Botones de informacion */
 
-.btn-1{
-    display: inline-block;
-    padding: 11px 35px;
-    background-color: rgb(165, 19, 19);
-    color: white;
-    text-transform: uppercase;
-    transition: 0.3s;
-    border-radius: 5px;
+.btn-1 {
+  display: inline-block;
+  padding: 11px 35px;
+  background-color: rgb(165, 19, 19);
+  color: white;
+  text-transform: uppercase;
+  transition: 0.3s;
+  border-radius: 5px;
 }
 
-.btn-1:hover{
-    background-color: rgb(235, 44, 44);
-    transform: scale(1.1);
+.btn-1:hover {
+  background-color: rgb(235, 44, 44);
+  transform: scale(1.1);
 }
 
 /* Linea de quienes somos */
 
-.quienes-somos{
-    padding: 100px;
-    background-color: rgb(243, 243, 243);
-    position: relative;
+.quienes-somos {
+  padding: 100px;
+  background-color: rgb(243, 243, 243);
+  position: relative;
 }
 
-.quienes-somos{
-    text-align: center;
-
+.quienes-somos {
+  text-align: center;
 }
 
 .quienes-somos-container h2 {
-    font-size: 55px;
-    line-height: 70px;
-    color: rgb(100, 12, 1);
-    text-transform: uppercase;
-    padding: 0 90px;
-    margin-bottom: 15px;
+  font-size: 55px;
+  line-height: 70px;
+  color: rgb(100, 12, 1);
+  text-transform: uppercase;
+  padding: 0 90px;
+  margin-bottom: 15px;
 }
-
 
 /* Modal */
 
-.boton-modal{
-    padding: 40px;
+.boton-modal {
+  padding: 40px;
 }
 
-.boton-modal label{
-    padding: 10px 15px;
-    background-color: rgb(165, 19, 19);
-    color: white;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: all 300ms ease;
+.boton-modal label {
+  padding: 10px 15px;
+  background-color: rgb(165, 19, 19);
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 300ms ease;
 }
 
-.boton-modal label:hover{
-    background-color: #75170a;
+.boton-modal label:hover {
+  background-color: #75170a;
 }
 
-#btn-modal{
-    display: none;
+#btn-modal {
+  display: none;
 }
 
-
-.container-modal{
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    background-color: rgba(0, 0, 0, 0.308);
-    top: 0; left: 0;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    z-index: 100;
+.container-modal {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.308);
+  top: 0;
+  left: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
 }
 
-.container-modal p{
-    color: black
+.container-modal p {
+  color: black;
 }
 
-#btn-modal:checked ~ .container-modal{
-    display: flex;
+#btn-modal:checked ~ .container-modal {
+  display: flex;
 }
 
-.content-modal{
-    width: 100%;
-    max-width: 400px;
-    padding: 30px;
-    background-color: white;
-    border-radius: 4px;
+.content-modal {
+  width: 100%;
+  max-width: 400px;
+  padding: 30px;
+  background-color: white;
+  border-radius: 4px;
 }
 
-.content-modal h2{
-    margin-bottom: 15px;
+.content-modal h2 {
+  margin-bottom: 15px;
 }
 
-.content-modal p{
-    padding: 15px 0px;
-    border-top: 1px solid rgb(228, 228, 228);
-    border-bottom: 1px solid rgb(228, 228, 228);
+.content-modal p {
+  padding: 15px 0px;
+  border-top: 1px solid rgb(228, 228, 228);
+  border-bottom: 1px solid rgb(228, 228, 228);
 }
 
-.content-modal .btn-cerrar{
-    width: 100%;
-    margin-top: 15px;
-    display: flex;
-    justify-content: flex-end;
+.content-modal .btn-cerrar {
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-end;
 }
 
-.content-modal .btn-cerrar label{
-    padding: 7px 10px;
-    background-color: rgb(165, 19, 19);
-    color: white;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: all 300ms ease;
+.content-modal .btn-cerrar label {
+  padding: 7px 10px;
+  background-color: rgb(165, 19, 19);
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 300ms ease;
 }
 
-.content-modal .btn-cerrar label:hover{
-    background-color: #75170a;
+.content-modal .btn-cerrar label:hover {
+  background-color: #75170a;
 }
 
-.cerrar-modal{
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    top: 0; left: 0;
-    z-index: -1;
+.cerrar-modal {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 @media screen and (max-width: 800px) {
-
-    .content-modal{
-        width: 90%;
-    }
-    
+  .content-modal {
+    width: 90%;
+  }
 }
 
 /* Fin Modal */
 
-.txt-p{
-    font-size: 16px;
-    color: rgb(48, 48, 48);
-    padding: 0 250px;
-    margin-bottom: 35px;
-
+.txt-p {
+  font-size: 16px;
+  color: rgb(48, 48, 48);
+  padding: 0 250px;
+  margin-bottom: 35px;
 }
 
 /* Apartado de servicios */
 
 /* Fondo */
-.servicios{
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(img/grupo-personas-trabajando-plan-negocios-oficina.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* background-attachment: fixed; */
-    padding: 100px ;
+.servicios {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(img/grupo-personas-trabajando-plan-negocios-oficina.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-attachment: fixed; */
+  padding: 100px;
 }
 
-.servicios-content-container{
-    text-align: center;
+.servicios-content-container {
+  text-align: center;
 }
 
 /* Titulo */
-.servicios-content-container h2{
-    font-size: 55px;
-    line-height: 70px;
-    color: white;
-    text-transform: uppercase;
-    margin-bottom: 50px;
+.servicios-content-container h2 {
+  font-size: 55px;
+  line-height: 70px;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 50px;
 }
 
-.servicios-content-container p{
-    display: flex;
-    color: rgb(231, 231, 231);
-    margin-bottom: 50px;
-    padding: 0 100px;
+.servicios-content-container p {
+  display: flex;
+  color: rgb(231, 231, 231);
+  margin-bottom: 50px;
+  padding: 0 100px;
 }
 
 /* Iconos */
-.servicios-group{
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 50px;
-    color: white;
-    
+.servicios-group {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+  color: white;
 }
 
-.servicios i{
-    font-size: 50px;
-    margin-bottom: 15px;
-    transition: 0.1s;
+.servicios i {
+  font-size: 50px;
+  margin-bottom: 15px;
+  transition: 0.1s;
 }
 
-.servicios i:hover{
-    transform: scale(1.5);
+.servicios i:hover {
+  transform: scale(1.5);
 }
 
-.servicios .service-info1{
-    display: none;
+.servicios .service-info1 {
+  display: none;
 }
 
-.servicios .service-info1:hover{
-    display: block;
+.servicios .service-info1:hover {
+  display: block;
 }
 
 /* Instalaciones */
 
-.general{
-    display: flex;
+.general {
+  display: flex;
 }
 
-.general-1{
-    width: 50%;
-    padding: 100px 250px 100px 100px;
-    background-color: rgb(212, 209, 228);
+.general-1 {
+  width: 50%;
+  padding: 100px 250px 100px 100px;
+  background-color: rgb(212, 209, 228);
 }
 
 .general-2 {
-    background-image: url(img/Departament-contraloria2.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 50%;
+  background-image: url(img/Departament-contraloria2.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
 }
 
 .general-3 {
-    background-image: url(img/papers3.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 50%;
+  background-image: url(img/papers3.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
 }
 
-h2{
-    font-size: 55px;
-    line-height: 70px;
-    color: rgb(73, 17, 17);
-    text-transform: uppercase;
-    margin-bottom: 20px;
+h2 {
+  font-size: 55px;
+  line-height: 70px;
+  color: rgb(73, 17, 17);
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
-p{
-    font-size: 16px;
-    color: rgb(78, 15, 15);
-    margin: 25px 0 45px 0;
+p {
+  font-size: 16px;
+  color: rgb(78, 15, 15);
+  margin: 25px 0 45px 0;
 }
 
-.blog{
-    padding: 100px ;
-    text-align: center;
+.blog {
+  padding: 100px;
+  text-align: center;
 }
 
-.blog-content{
-    display: flex;
-    justify-content: space-between;
+.blog-content {
+  display: flex;
+  justify-content: space-between;
 }
 
 .blog-1 {
-    padding: 0px 46px;
+  padding: 0px 46px;
 }
 
 .blog-1 img {
-    width: 250px;
-    border-radius: 15px;
-    margin-bottom: 15px;
+  width: 250px;
+  border-radius: 15px;
+  margin-bottom: 15px;
 }
 
 .blog-1 h3 {
-    font-size: 25px;
-    color: rgb(71, 7, 7);
+  font-size: 25px;
+  color: rgb(71, 7, 7);
 }
 
-.carrusel-container{
-   text-align: center;
-   padding: 100px;
-   background-color: rgb(231, 231, 231);
+.carrusel-container {
+  text-align: center;
+  padding: 100px;
+  background-color: rgb(231, 231, 231);
 }
 
-.carrusel{
-    display: flex;
-    flex-wrap: nowrap;
-    overflow: scroll;
+.carrusel {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: scroll;
 }
 
-.elemento img{
-    flex: 1 0 auto;
-    margin: 0 50px;
-    background-color: #d12710;
-    width: 350px;
-    height: 350px;
-    border-radius: 12px;
+.elemento img {
+  flex: 1 0 auto;
+  margin: 0 50px;
+  background-color: #d12710;
+  width: 350px;
+  height: 350px;
+  border-radius: 12px;
 }
 
 .footer {
-    padding: 100px;
-    background-color: rgb(20, 6, 6);
+  padding: 100px;
+  background-color: rgb(20, 6, 6);
 }
 
-.footer-content{
-    display: flex;
-    justify-content: space-between;
+.footer-content {
+  display: flex;
+  justify-content: space-between;
 }
 
-.footer p{
-    display: flex;
-    justify-content: center;
-    color: rgb(221, 221, 221);
+.footer p {
+  display: flex;
+  justify-content: center;
+  color: rgb(221, 221, 221);
 }
 
 .link h3 {
-    font-size: 18px;
-    color: rgb(245, 245, 245);
-    margin-bottom: 15px;
+  font-size: 18px;
+  color: rgb(245, 245, 245);
+  margin-bottom: 15px;
 }
 
 .link a {
-    font-size: 16px;
-    color: darkgray;
-    display: block;
-    margin-bottom: 15px;
+  font-size: 16px;
+  color: darkgray;
+  display: block;
+  margin-bottom: 15px;
 }
 
+@media (max-width: 991px) {
+  .menu {
+    padding: 30px;
+  }
 
-@media(max-width:991px) {
+  .menu label {
+    display: initial;
+  }
 
-    .menu {
-        padding: 30px;
-    }
+  /* Menu desplegable con icono */
+  .menu .navbar ul li a {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    max-width: 130px;
+    justify-content: flex-start;
+  }
+  .menu .navbar {
+    position: absolute;
+    top: 80%;
+    left: 0;
+    right: 0;
+    background-color: rgb(22, 19, 19);
+    display: none;
+  }
+  .nav-menu-option i {
+    display: initial;
+    margin-left: 10px;
+  }
 
-    .menu label {
-        display: initial;
-    }
+  .nav-menu-option i:hover {
+    transform: rotate(90deg);
+  }
 
-    .menu .navbar {
-        position: absolute;
-        top: 80%;
-        left: 0;
-        right: 0;
-        background-color: rgb(22, 19, 19);
-        display: none;
-    }
+  .nav-menu-option {
+    display: flex;
+    justify-content: center;
+  }
+  .menu-vertical {
+    position: relative;
+    display: none;
+    width: 200px;
+    background-color: rgb(22, 19, 19);
+    border-radius: 11px;
+    flex-direction: column;
+    color: rgb(211, 211, 211);
+    transition: transform 2s;
+  }
+  .navbar li i:hover .menu-vertical {
+    display: flex;
+  }
+  .menu-vertical a {
+    justify-content: center;
+  }
 
-    
-    h2{
-        font-size: 30px;
-        line-height: 40px;
+  .navbar ul li i {
+    display: flex;
+    align-items: center;
+  }
 
-    }
-    
-    .look-container{
-        display: none;
-    } 
+  /* fin del menu desblogable con icono */
 
-    .navbar li:hover .menu-vertical{
-        display: none;
-    } 
+  h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
 
+  .look-container {
+    display: none;
+  }
 
-   
-    .menu .navbar ul li {
-        width: 100%;
-    }
+  .menu .navbar ul li {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
 
-    #menu:checked ~ .navbar{
-        display: initial;
-    }
+  #menu:checked ~ .navbar {
+    display: initial;
+  }
 
+  .header {
+    min-height: 0vh;
+  }
 
+  .header-content {
+    padding: 100px 30px;
+  }
 
-    .header{
-        min-height: 0vh;
-    }
+  .header-content p {
+    padding: 0;
+  }
 
-    .header-content{
-        padding: 100px 30px;
-    }
+  .header-content h1 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-top: 20px;
+  }
 
-    .header-content p{
-        padding: 0;
+  /* Logo de la contraloria */
+  .header img {
+    width: 56px;
+  }
 
-    }
+  .quienes-somos {
+    padding: 30px;
+  }
 
-    .header-content h1{
-        font-size: 40px;
-        line-height: 40px;
-        margin-top: 20px;
-    }
+  .quienes-somos-container h2 {
+    padding: 0;
+  }
 
-       /* Logo de la contraloria */
-       .header img{
-        width: 56px;
-    }
+  .txt-p {
+    padding: 0;
+  }
 
-    .quienes-somos{
-        padding: 30px;
-    }
+  .servicios {
+    padding: 0;
+  }
 
-    .quienes-somos-container h2{
-        padding: 0;
-    }
+  .general {
+    flex-direction: column;
+  }
 
-    .txt-p {
-        padding: 0;
-    }
+  .general-1 {
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+  }
 
-    .servicios{
-        padding: 0;
-    }
+  .general-2,
+  .general-3 {
+    display: none;
+  }
 
-    .general{
-        flex-direction: column;
-    }
+  .blog {
+    padding: 30px;
+  }
 
-    .general-1{
-        width: 100%;
-        padding: 30px;
-        text-align: center;
-    }
+  .blog-content {
+    flex-direction: column;
+  }
 
-    .general-2, .general-3{
-        display: none;
-    }
+  .blog-1 {
+    padding: 0;
+  }
 
-    .blog{
-        padding: 30px;
-    }
+  .footer {
+    padding: 30px;
+  }
 
-    .blog-content {
-        flex-direction: column;
-    }
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
 
-    .blog-1 {
-        padding: 0;
-    }
-  
-    .footer {
-        padding: 30px;
-    }
+  .servicios-group {
+    flex-flow: column;
+  }
 
-    .footer-content{
-        flex-direction: column;
-        text-align: center;
-    }
+  .servicio-2,
+  .servicio-3 {
+    margin-top: 30px;
+  }
 
-    .servicios-group{
-        flex-flow: column;
-    }
+  p {
+    line-height: 1.2;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 
-    .servicio-2,
-    .servicio-3{
-        margin-top: 30px;
-    }
+  .servicios-content-container p {
+    padding: 0 40px;
+  }
 
-    p{
-        line-height: 1.2;
-        margin-left: 20px;
-        margin-right: 20px
-    }
+  .servicios-content-container h2 {
+    padding-top: 40px;
+  }
 
-    .servicios-content-container p{
-        padding: 0 40px;
-    }
-
-    .servicios-content-container h2{
-        padding-top: 40px;
-    }
-
-    .servicios-content-container{
-        padding-bottom: 40px;
-    }
+  .servicios-content-container {
+    padding-bottom: 40px;
+  }
 }
